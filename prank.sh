@@ -5,7 +5,8 @@ clear
 
 GREEN="$(tput setaf 2)"
 RESET="$(tput sgr0)"
-DIRECTORY="/home/feilong"
+USER=$(whoami)
+DIRECTORY="/home/$USER"
 PS1="${GREEN}${DIRECTORY}${RESET}>" #Terminal prompt string
 
 echo "$PS1 ls -l ${DIRECTORY}"
